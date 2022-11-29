@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('Resources/TemplatePages/ApiThreeColV2.flmsp');">
+    <head>
+        <link href="Resources/TableStyles/UKGTableStylesheet01.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="Resources/Stylesheets/ApiReferenceStyles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="topic-hero">
+            <div class="home-tiles-container">
+                <div class="home-tiles-three-row">
+                    <div>
+                        <MadCap:menuProxy mc-linked-toc="$topicHeadings" style="mc-toc-depth: 2;mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;" />
+                    </div>
+                    <div>
+                        <h1 id="introduction">API Reference</h1>
+                        <p>You can use our API to access pet API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+                        <h1 id="authentication">Authentication</h1>
+                        <p>Pet uses API keys to allow access to the API. You can register a new Pet API key at our developer portal.</p>
+                        <p>Pet expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+                        <p><code>Authorization: meowmeowmeow</code>
+                        </p>
+                        <aside class="notice" MadCap:autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;">You must replace <code>meowmeowmeow</code> with your personal API key.</aside>
+                    </div>
+                    <div>
+                        <p>Use this code:</p>
+                        <div class="code">
+                            <p>require = 'pet'</p>
+                            <p>api = pet :: APIClient.authorize!('meowmeowmeow')</p>
+                            <p>import  pet</p>
+                            <p>api  =  pet.authorize('meowmeowmeow')</p>
+                            <p># With shell, you can just pass the correct header with each request</p>
+                            <p>curl "api_endpoint_here"</p>
+                            <p>-H "Authorization: meowmeowmeow"</p>
+                            <p>const  pet  =  require('pet'); </p>
+                            <p>let  api  =  pet.authorize('meowmeowmeow');</p>
+                        </div>
+                        <p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
+                    </div>
+                </div>
+                <div class="home-tiles-three-row">
+                    <div>
+                    </div>
+                    <div>
+                        <h1 id="kittens">Pets</h1>
+                        <h2 id="get-all-kittens">Get All Pets</h2>
+                        <p>This endpoint retrieves all pets.</p>
+                        <h3 id="http-request">HTTP Request</h3>
+                        <p>
+                            <div class="code">GET http://example.com/api/pets</div>
+                        </p>
+                        <h3 id="query-parameters">Query Parameters</h3>
+                        <table style="mc-table-style: url('Resources/TableStyles/UKGTableStylesheet01.css');" class="TableStyle-UKGTableStylesheet01" cellspacing="0">
+                            <thead>
+                                <tr class="TableStyle-UKGTableStylesheet01-Head-Header1">
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Parameter</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Default</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadD-Column1-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">include_cats</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">false</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">If set to true, the result will also include cats.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body2">available</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body2">true</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyA-Column1-Body2">If set to false, the result will include pets that have already been adopted.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <aside class="success">Remember to authenticate!</aside>
+                    </div>
+                    <div class="DivThree">
+                        <p>Use this code:</p>
+                        <div class="code">
+                            <p>require  'pet'</p>
+                            <p>api  =  pet::APIClient.authorize!('meowmeowmeow')</p>
+                            <p>api.pet.get</p>
+                            <p>import  pet</p>
+                            <p>api  =  pet.authorize('meowmeowmeow')</p>
+                            <p>api.kittens.get()</p>
+                            <p>curl "http://example.com/api/pets"</p>
+                            <p>-H "Authorization: meowmeowmeow"</p>
+                            <p>const  pet  =  require('pet');</p>
+                            <p>let  api  =  pet.authorize('meowmeowmeow');</p>
+                            <p>let  kittens  =  api.pets.get();</p>
+                        </div>
+                        <p>The above command returns JSON structured like this:</p>
+                        <p>[   {   "id":   1,   "name":   "Fluffums",   "breed":   "calico",   "fluffiness":   6,   "cuteness":   7   },   {   "id":   2,   "name":   "Max",   "breed":   "unknown",   "fluffiness":   5,   "cuteness":   10   }   ]</p>
+                    </div>
+                </div>
+                <div class="home-tiles-three-row">
+                    <div class="DivOne">
+                    </div>
+                    <div class="DivTwo">
+                        <h2 id="get-a-specific-kitten">Get a Specific Pet</h2>
+                        <p>This endpoint retrieves a specific pet.</p>
+                        <aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+                        <h3 id="http-request-2">HTTP Request</h3>
+                        <p>
+                            <div class="code">GET http://example.com/pets/&lt;ID&gt;</div>
+                        </p>
+                        <h3 id="url-parameters">URL Parameters</h3>
+                        <table style="mc-table-style: url('Resources/TableStyles/UKGTableStylesheet01.css');" class="TableStyle-UKGTableStylesheet01" cellspacing="0">
+                            <thead>
+                                <tr class="TableStyle-UKGTableStylesheet01-Head-Header1">
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Parameter</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadD-Column1-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body1">ID</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyA-Column1-Body1">The ID of the pet to retrieve</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="DivThree">
+                        <p>Use this code:</p>
+                        <div class="code">
+                            <p>require  'pet'</p>
+                            <p>api  =  pet::APIClient.authorize!('meowmeowmeow')</p>
+                            <p>api.pets.get(2)</p>
+                            <p>import  pet </p>
+                            <p>api  =  pet.authorize('meowmeowmeow')</p>
+                            <p>api.pets.get(2)</p>
+                            <p>curl "http://example.com/api/pets/2"</p>
+                            <p>-H "Authorization: meowmeowmeow"</p>
+                            <p>const  pet  =  require('pet');</p>
+                            <p>let  api  =  pet.authorize('meowmeowmeow');</p>
+                            <p>let  max  =  api.pets.get(2);</p>
+                        </div>
+                        <p>The above command returns JSON structured like this:</p>
+                        <p>{   "id":   2,   "name":   "Max",   "breed":   "unknown",   "fluffiness":   5,   "cuteness":   10   }</p>
+                    </div>
+                </div>
+                <div class="home-tiles-three-row">
+                    <div class="DivOne">
+                    </div>
+                    <div class="DivTwo">
+                        <h2 id="delete-a-specific-kitten">Delete a Specific Pet</h2>
+                        <p>This endpoint deletes a specific pet.</p>
+                        <h3 id="http-request-3">HTTP Request</h3>
+                        <p>
+                            <div class="code">DELETE http://example.com/pets/&lt;ID&gt;</div>
+                        </p>
+                        <h3 id="url-parameters-2">URL Parameters</h3>
+                        <table style="mc-table-style: url('Resources/TableStyles/UKGTableStylesheet01.css');" class="TableStyle-UKGTableStylesheet01" cellspacing="0">
+                            <thead>
+                                <tr class="TableStyle-UKGTableStylesheet01-Head-Header1">
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Parameter</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadD-Column1-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body1">ID</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyA-Column1-Body1">The ID of the pet to delete</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="DivThree">
+                        <p>Use this code:</p>
+                        <div class="code">
+                            <p>require  'pet'</p>
+                            <p>api  =  pet::APIClient.authorize!('meowmeowmeow')</p>
+                            <p>api.kittens.delete(2)</p>
+                            <p>import  pet</p>
+                            <p>api  =  pet.authorize('meowmeowmeow')</p>
+                            <p>api.kittens.delete(2)</p>
+                            <p>curl "http://example.com/api/pets/2"</p>
+                            <p>-X DELETE</p>
+                            <p>-H "Authorization: meowmeowmeow"</p>
+                            <p>const  pet  =  require('pet');</p>
+                            <p>let  api  =  pet.authorize('meowmeowmeow');</p>
+                            <p>let  max  =  api.pets.delete(2);</p>
+                        </div>
+                        <p>The above command returns JSON structured like this:</p>
+                        <p>{   "id":   2,   "deleted"   :   ":("   }</p>
+                    </div>
+                </div>
+                <div class="home-tiles-three-row">
+                    <div class="DivOne">
+                    </div>
+                    <div class="DivTwo">
+                        <h1 id="errors">Errors</h1>
+                        <aside class="notice" MadCap:autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;">This error section is stored in a separate file in includes/_errors.md. Files are included in the order listed.</aside>
+                        <p>The pet API uses the following error codes:</p>
+                        <table style="mc-table-style: url('Resources/TableStyles/UKGTableStylesheet01.css');" class="TableStyle-UKGTableStylesheet01" cellspacing="0">
+                            <thead>
+                                <tr class="TableStyle-UKGTableStylesheet01-Head-Header1">
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Error Code</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadD-Column1-Header1">Meaning</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">400</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Bad Request -- Your request sucks.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">401</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">Unauthorized -- Your API key is wrong.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">403</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Forbidden -- The pet requested is hidden for administrators only.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">404</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">Not Found -- The specified pet could not be found.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">405</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Method Not Allowed -- You tried to access a pet with an invalid method.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">406</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">Not Acceptable -- You requested a format that isn't json.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">410</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Gone -- The pet requested has been removed from our servers.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">418</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">I'm a teapot.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">429</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Too Many Requests -- You're requesting too many pets! Slow down!</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">500</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">Internal Server Error -- We had a problem with our server. Try again later.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body1">503</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyA-Column1-Body1">Service Unavailable -- We're temporarily offline for maintenance. Please try again later.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

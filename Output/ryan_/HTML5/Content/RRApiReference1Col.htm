@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" /><title>API Reference (Swagger Petstore Example)</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/CherLfTest2Mainstyles.css" rel="stylesheet" type="text/css" />
+        <link href="Resources/Stylesheets/ApiReferenceStyles.css" rel="stylesheet" type="text/css" />
+        <link href="Resources/TableStyles/UKGTableStylesheet01.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="Resources/Stylesheets/ApiReferenceStylesTwoColPgs.css" rel="stylesheet" />
+        <style>/*<![CDATA[*/
+
+body
+{
+	font-family: Trebuchet ms, sans-serif;
+	font-size: 15px;
+	color: #444;
+	margin-right: 24px;
+}
+
+h1
+{
+	font-size: 25px;
+}
+
+h2
+{
+	font-size: 20px;
+}
+
+h3
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+hr
+{
+	height: 1px;
+	border: 0;
+	color: #ddd;
+	background-color: #ddd;
+}
+
+.app-desc
+{
+	clear: both;
+	margin-left: 20px;
+}
+
+.param-name
+{
+	width: 100%;
+}
+
+.license-info
+{
+	margin-left: 20px;
+}
+
+.license-url
+{
+	margin-left: 20px;
+}
+
+.model
+{
+	margin: 0 0 0px 20px;
+}
+
+.method
+{
+	margin-left: 20px;
+}
+
+.method-notes
+{
+	margin: 10px 0 20px 0;
+	font-size: 90%;
+	color: #555;
+}
+
+pre
+{
+	padding: 10px;
+	margin-bottom: 2px;
+}
+
+.http-method
+{
+	text-transform: uppercase;
+}
+
+pre.get
+{
+	background-color: #0f6ab4;
+}
+
+pre.post
+{
+	background-color: #10a54a;
+}
+
+pre.put
+{
+	background-color: #c5862b;
+}
+
+pre.delete
+{
+	background-color: #a41e22;
+}
+
+.huge
+{
+	color: #fff;
+}
+
+pre.example
+{
+	background-color: #f3f3f3;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+code
+{
+	white-space: pre;
+}
+
+.nickname
+{
+	font-weight: bold;
+}
+
+.method-path
+{
+	font-size: 1.5em;
+	background-color: #0f6ab4;
+}
+
+.up
+{
+	float: right;
+}
+
+.parameter
+{
+	width: 500px;
+}
+
+.param
+{
+	width: 500px;
+	padding: 10px 0 0 20px;
+	font-weight: bold;
+}
+
+.param-desc
+{
+	width: 700px;
+	padding: 0 0 0 20px;
+	color: #777;
+}
+
+.param-type
+{
+	font-style: italic;
+}
+
+.param-enum-header
+{
+	width: 700px;
+	padding: 0 0 0 60px;
+	color: #777;
+	font-weight: bold;
+}
+
+.param-enum
+{
+	width: 700px;
+	padding: 0 0 0 80px;
+	color: #777;
+	font-style: italic;
+}
+
+.field-label
+{
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+.field-items
+{
+	padding: 0 0 15px 0;
+	margin-bottom: 15px;
+}
+
+.return-type
+{
+	clear: both;
+	padding-bottom: 10px;
+}
+
+.param-header
+{
+	font-weight: bold;
+}
+
+.method-tags
+{
+	text-align: right;
+}
+
+.method-tag
+{
+	background: none repeat scroll 0% 0% #24A600;
+	border-radius: 3px;
+	padding: 2px 10px;
+	margin: 2px;
+	color: #FFF;
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*]]>*/
+
+</style>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="RRApiReference3Col.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search our API reference" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div id="contentBody" class="off-canvas-main">
+                                        <div role="main" id="mc-main-content">
+                                            <div class="topic-hero">
+                                                <div class="home-tiles-container">
+                                                    <div class="home-tiles-two-row">
+                                                        <div>
+                                                            <h3>Table of Contents </h3>
+                                                            <div class="method-summary">
+                                                            </div>
+                                                            <h4><a href="#Pet">Pet</a>
+                                                            </h4>
+                                                            <ul>
+                                                                <li value="1"><a href="#addPet"><code><span class="http-method">post</span> /pets</code></a>
+                                                                </li>
+                                                                <li value="2"><a href="#deletePet"><code><span class="http-method">delete</span> /pets/{petId}</code></a>
+                                                                </li>
+                                                                <li value="3"><a href="#findPetsByStatus"><code><span class="http-method">get</span> /pets/findByStatus</code></a>
+                                                                </li>
+                                                                <li value="4"><a href="#findPetsByTags"><code><span class="http-method">get</span> /pets/findByTags</code></a>
+                                                                </li>
+                                                                <li value="5"><a href="#getPetById"><code><span class="http-method">get</span> /pets/{petId}</code></a>
+                                                                </li>
+                                                                <li value="6"><a href="#updatePet"><code><span class="http-method">put</span> /pets</code></a>
+                                                                </li>
+                                                                <li value="7"><a href="#updatePetWithForm"><code><span class="http-method">post</span> /pets/{petId}</code></a>
+                                                                </li>
+                                                            </ul>
+                                                            <h4><a href="#Store">Store</a>
+                                                            </h4>
+                                                            <ul>
+                                                                <li value="1"><a href="#deleteOrder"><code><span class="http-method">delete</span> /stores/order/{orderId}</code></a>
+                                                                </li>
+                                                                <li value="2"><a href="#getOrderById"><code><span class="http-method">get</span> /stores/order/{orderId}</code></a>
+                                                                </li>
+                                                                <li value="3"><a href="#placeOrder"><code><span class="http-method">post</span> /stores/order</code></a>
+                                                                </li>
+                                                            </ul>
+                                                            <h4><a href="#User">User</a>
+                                                            </h4>
+                                                            <ul>
+                                                                <li value="1"><a href="#createUser"><code><span class="http-method">post</span> /users</code></a>
+                                                                </li>
+                                                                <li value="2"><a href="#createUsersWithArrayInput"><code><span class="http-method">post</span> /users/createWithArray</code></a>
+                                                                </li>
+                                                                <li value="3"><a href="#createUsersWithListInput"><code><span class="http-method">post</span> /users/createWithList</code></a>
+                                                                </li>
+                                                                <li value="4"><a href="#deleteUser"><code><span class="http-method">delete</span> /users/{username}</code></a>
+                                                                </li>
+                                                                <li value="5"><a href="#getUserByName"><code><span class="http-method">get</span> /users/{username}</code></a>
+                                                                </li>
+                                                                <li value="6"><a href="#loginUser"><code><span class="http-method">get</span> /users/login</code></a>
+                                                                </li>
+                                                                <li value="7"><a href="#logoutUser"><code><span class="http-method">get</span> /users/logout</code></a>
+                                                                </li>
+                                                                <li value="8"><a href="#updateUser"><code><span class="http-method">put</span> /users/{username}</code></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <h1>Swagger Petstore</h1>
+                                                            <div class="app-desc">
+                                                                <p>This is a sample server Petstore server.</p>
+                                                                <p><a href="http://swagger.io">Learn about Swagger</a> or join the IRC channel <code>#swagger</code> on irc.freenode.net.</p>
+                                                                <p>For this sample, you can use the api key <code>special-key</code> to test the authorization filters</p>
+                                                            </div>
+                                                            <div class="app-desc">More information: <a href=""></a></div>
+                                                            <div class="app-desc">Contact Info: <a href="hello@helloreverb.com">hello@helloreverb.com</a></div>
+                                                            <div class="app-desc">Version: 1.0.0</div>
+                                                            <div class="app-desc">BasePath:/v2</div>
+                                                            <div class="license-info">Apache 2.0</div>
+                                                            <div class="license-url">http://www.apache.org/licenses/LICENSE-2.0.html</div>
+                                                            <h2>Access</h2>
+                                                            <ol>
+                                                                <li value="1">APIKey KeyParamName:api_key KeyInQuery:false KeyInHeader:true</li>
+                                                                <li value="2">OAuth AuthorizationUrl:http://petstore.swagger.io/api/oauth/dialogTokenUrl:</li>
+                                                            </ol>
+                                                            <h2><a name="__Methods"></a>Methods</h2>
+						[ Jump to <a href="#__Models">Models</a> ]
+
+												
+							
+							
+							
+							
+							
+							
+							
+						<h1><a name="Pet"></a>Pet</h1><div class="method"><a name="addPet"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="post" xml:space="preserve"><code class="huge"><span class="http-method">post</span> /pets</code></pre></div><div class="method-summary">Add a new pet to the store (<span class="nickname">addPet</span>)</div><div class="method-notes"></div><h3 class="field-label">Consumes</h3>
+							This API call consumes the following media types via the <span class="heaader">Content-Type</span> request header:
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Request body</h3><div class="field-items"><div class="param">body <a href="#body_1">body_1</a> (optional)</div><div class="param-desc"><span class="param-type">Body Parameter</span> — Pet object that needs to be added to the store </div></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">405</h4>
+							Invalid input
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="deletePet"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="delete" xml:space="preserve"><code class="huge"><span class="http-method">delete</span> /pets/{petId}</code></pre></div><div class="method-summary">Deletes a pet (<span class="nickname">deletePet</span>)</div><div class="method-notes"></div><h3 class="field-label">Path parameters</h3><div class="field-items"><div class="param">petId (required)</div><div class="param-desc"><span class="param-type">Path Parameter</span> — Pet id to delete format: int64</div></div><!-- field-items --><h3 class="field-label">Request headers</h3><div class="field-items"></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">400</h4>
+							Invalid pet value
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="findPetsByStatus"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="get" xml:space="preserve"><code class="huge"><span class="http-method">get</span> /pets/findByStatus</code></pre></div><div class="method-summary">Finds Pets by status (<span class="nickname">findPetsByStatus</span>)</div><div class="method-notes">Multiple status values can be provided with comma seperated strings</div><h3 class="field-label">Query parameters</h3><div class="field-items"><div class="param">status (optional)</div><div class="param-desc"><span class="param-type">Query Parameter</span> — Status values that need to be considered for filter </div></div><!-- field-items --><h3 class="field-label">Return type</h3><div class="return-type">
+								array[<a href="#inline_response_200">inline_response_200</a>]
+      
+							</div><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/json</div><pre class="example"><div class="code"><p>[ {</p><p>"photoUrls" : [ "aeiou" ],</p><p>"name" : "doggie",</p><p>"id" : 0,</p><p>"category" : {</p><p>"name" : "aeiou",</p><p>"id" : 6</p><p>},</p><p>"tags" : [ "" ],</p><p>"status" : "aeiou"</p><p>} ]</p></div></pre><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/xml</div><pre class="example"><div class="code"><null><p>123456789</p><p>doggie</p><p>aeiou</p><p>aeiou</p></null></div></pre><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">200</h4>
+							successful operation
+        
+							<h4 class="field-label">400</h4>
+							Invalid status value
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="findPetsByTags"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="get" xml:space="preserve"><code class="huge"><span class="http-method">get</span> /pets/findByTags</code></pre></div><div class="method-summary">Finds Pets by tags (<span class="nickname">findPetsByTags</span>)</div><div class="method-notes">Muliple tags can be provided with comma seperated strings. Use tag1, tag2, tag3 for testing.</div><h3 class="field-label">Query parameters</h3><div class="field-items"><div class="param">tags (optional)</div><div class="param-desc"><span class="param-type">Query Parameter</span> — Tags to filter by </div></div><!-- field-items --><h3 class="field-label">Return type</h3><div class="return-type">
+								array[<a href="#inline_response_200">inline_response_200</a>]
+      
+							</div><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/json</div><pre class="example"><div class="code"><p>[ {</p><p>"photoUrls" : [ "aeiou" ],</p><p>"name" : "doggie",</p><p>"id" : 0,</p><p>"category" : {</p><p>"name" : "aeiou",</p><p>"id" : 6</p><p>},</p><p>"tags" : [ "" ],</p><p>"status" : "aeiou"</p><p>} ]</p></div></pre><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/xml</div><pre class="example" xml:space="preserve"><code><null>
+										<id>123456789</id>
+										<name>doggie</name>
+										<photourls>aeiou</photourls>
+										<status>aeiou</status>
+							</null></code></pre><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">200</h4>
+							successful operation
+        
+							<h4 class="field-label">400</h4>
+							Invalid tag value
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="getPetById"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="get" xml:space="preserve"><code class="huge"><span class="http-method">get</span> /pets/{petId}</code></pre></div><div class="method-summary">Find pet by ID (<span class="nickname">getPetById</span>)</div><div class="method-notes">Returns a pet when ID &lt; 10. ID &gt; 10 or nonintegers will simulate API error conditions</div><h3 class="field-label">Path parameters</h3><div class="field-items"><div class="param">petId (required)</div><div class="param-desc"><span class="param-type">Path Parameter</span> — ID of pet that needs to be fetched format: int64</div></div><!-- field-items --><h3 class="field-label">Return type</h3><div class="return-type"><a href="#inline_response_200">inline_response_200</a></div><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/json</div><pre class="example" xml:space="preserve"><code>{
+									"photoUrls" : [ "aeiou" ],
+									"name" : "doggie",
+									"id" : 0,
+									"category" : {
+									"name" : "aeiou",
+									"id" : 6
+									},
+									"tags" : [ "" ],
+									"status" : "aeiou"
+							}</code></pre><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/xml</div><pre class="example" xml:space="preserve"><code><null>
+										<id>123456789</id>
+										<name>doggie</name>
+										<photourls>aeiou</photourls>
+										<status>aeiou</status>
+							</null></code></pre><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">200</h4>
+							successful operation
+							<a href="#inline_response_200">inline_response_200</a><h4 class="field-label">400</h4>
+							Invalid ID supplied
+							<a href="#"></a><h4 class="field-label">404</h4>
+							Pet not found
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="updatePet"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="put" xml:space="preserve"><code class="huge"><span class="http-method">put</span> /pets</code></pre></div><div class="method-summary">Update an existing pet (<span class="nickname">updatePet</span>)</div><div class="method-notes"></div><h3 class="field-label">Consumes</h3>
+							This API call consumes the following media types via the <span class="heaader">Content-Type</span> request header:
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Request body</h3><div class="field-items"><div class="param">body <a href="#body">body</a> (optional)</div><div class="param-desc"><span class="param-type">Body Parameter</span> — Pet object that needs to be added to the store </div></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">400</h4>
+							Invalid ID supplied
+							<a href="#"></a><h4 class="field-label">404</h4>
+							Pet not found
+							<a href="#"></a><h4 class="field-label">405</h4>
+							Validation exception
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="updatePetWithForm"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="post" xml:space="preserve"><code class="huge"><span class="http-method">post</span> /pets/{petId}</code></pre></div><div class="method-summary">Updates a pet in the store with form data (<span class="nickname">updatePetWithForm</span>)</div><div class="method-notes"></div><h3 class="field-label">Path parameters</h3><div class="field-items"><div class="param">petId (required)</div><div class="param-desc"><span class="param-type">Path Parameter</span> — ID of pet that needs to be updated </div></div><!-- field-items --><h3 class="field-label">Consumes</h3>
+							This API call consumes the following media types via the <span class="heaader">Content-Type</span> request header:
+							<ul><li value="1"><code>application/x-www-form-urlencoded</code></li></ul><h3 class="field-label">Form parameters</h3><div class="field-items"><div class="param">name (required)</div><div class="param-desc"><span class="param-type">Form Parameter</span> — Updated name of the pet </div><div class="param">status (required)</div><div class="param-desc"><span class="param-type">Form Parameter</span> — Updated status of the pet </div></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">405</h4>
+							Invalid input
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><h1><a name="Store"></a>Store</h1><div class="method"><a name="deleteOrder"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="delete" xml:space="preserve"><code class="huge"><span class="http-method">delete</span> /stores/order/{orderId}</code></pre></div><div class="method-summary">Delete purchase order by ID (<span class="nickname">deleteOrder</span>)</div><div class="method-notes">For valid response try integer IDs with value &lt; 1000. Anything above 1000 or nonintegers will generate API errors</div><h3 class="field-label">Path parameters</h3><div class="field-items"><div class="param">orderId (required)</div><div class="param-desc"><span class="param-type">Path Parameter</span> — ID of the order that needs to be deleted </div></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">400</h4>
+							Invalid ID supplied
+							<a href="#"></a><h4 class="field-label">404</h4>
+							Order not found
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="getOrderById"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="get" xml:space="preserve"><code class="huge"><span class="http-method">get</span> /stores/order/{orderId}</code></pre></div><div class="method-summary">Find purchase order by ID (<span class="nickname">getOrderById</span>)</div><div class="method-notes">For valid response try integer IDs with value &lt;= 5 or &gt; 10. Other values will generated exceptions</div><h3 class="field-label">Path parameters</h3><div class="field-items"><div class="param">orderId (required)</div><div class="param-desc"><span class="param-type">Path Parameter</span> — ID of pet that needs to be fetched </div></div><!-- field-items --><h3 class="field-label">Return type</h3><div class="return-type"><a href="#inline_response_200_1">inline_response_200_1</a></div><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/json</div><pre class="example" xml:space="preserve"><code>{
+									"petId" : 6,
+									"quantity" : 1,
+									"id" : 0,
+									"shipDate" : "2000-01-23T04:56:07.000+00:00",
+									"complete" : true,
+									"status" : "aeiou"
+							}</code></pre><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/xml</div><pre class="example" xml:space="preserve"><code><null>
+										<id>123456789</id>
+										<petid>123456789</petid>
+										<quantity>123</quantity>
+										<shipdate>2000-01-23T04:56:07.000Z</shipdate>
+										<status>aeiou</status>
+										<complete>true</complete>
+							</null></code></pre><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">200</h4>
+							successful operation
+							<a href="#inline_response_200_1">inline_response_200_1</a><h4 class="field-label">400</h4>
+							Invalid ID supplied
+							<a href="#"></a><h4 class="field-label">404</h4>
+							Order not found
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="placeOrder"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="post" xml:space="preserve"><code class="huge"><span class="http-method">post</span> /stores/order</code></pre></div><div class="method-summary">Place an order for a pet (<span class="nickname">placeOrder</span>)</div><div class="method-notes"></div><h3 class="field-label">Request body</h3><div class="field-items"><div class="param">body <a href="#body_2">body_2</a> (optional)</div><div class="param-desc"><span class="param-type">Body Parameter</span> — order placed for purchasing the pet </div></div><!-- field-items --><h3 class="field-label">Return type</h3><div class="return-type"><a href="#inline_response_200_1">inline_response_200_1</a></div><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/json</div><pre class="example" xml:space="preserve"><code>{
+									"petId" : 6,
+									"quantity" : 1,
+									"id" : 0,
+									"shipDate" : "2000-01-23T04:56:07.000+00:00",
+									"complete" : true,
+									"status" : "aeiou"
+							}</code></pre><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/xml</div><pre class="example" xml:space="preserve"><code><null>
+										<id>123456789</id>
+										<petid>123456789</petid>
+										<quantity>123</quantity>
+										<shipdate>2000-01-23T04:56:07.000Z</shipdate>
+										<status>aeiou</status>
+										<complete>true</complete>
+							</null></code></pre><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">200</h4>
+							successful operation
+							<a href="#inline_response_200_1">inline_response_200_1</a><h4 class="field-label">400</h4>
+							Invalid Order
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><h1><a name="User"></a>User</h1><div class="method"><a name="createUser"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="post" xml:space="preserve"><code class="huge"><span class="http-method">post</span> /users</code></pre></div><div class="method-summary">Create user (<span class="nickname">createUser</span>)</div><div class="method-notes">This can only be done by the logged in user.</div><h3 class="field-label">Request body</h3><div class="field-items"><div class="param">body <a href="#body_3">body_3</a> (optional)</div><div class="param-desc"><span class="param-type">Body Parameter</span> — Created user object </div></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">default</h4>
+							successful operation
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="createUsersWithArrayInput"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="post" xml:space="preserve"><code class="huge"><span class="http-method">post</span> /users/createWithArray</code></pre></div><div class="method-summary">Creates list of users with given input array (<span class="nickname">createUsersWithArrayInput</span>)</div><div class="method-notes"></div><h3 class="field-label">Request body</h3><div class="field-items"><div class="param">body <a href="#body_4">body_4</a> (optional)</div><div class="param-desc"><span class="param-type">Body Parameter</span> — List of user object </div></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">default</h4>
+							successful operation
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="createUsersWithListInput"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="post" xml:space="preserve"><code class="huge"><span class="http-method">post</span> /users/createWithList</code></pre></div><div class="method-summary">Creates list of users with given input array (<span class="nickname">createUsersWithListInput</span>)</div><div class="method-notes"></div><h3 class="field-label">Request body</h3><div class="field-items"><div class="param">body <a href="#body_4">body_4</a> (optional)</div><div class="param-desc"><span class="param-type">Body Parameter</span> — List of user object </div></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">default</h4>
+							successful operation
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="deleteUser"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="delete" xml:space="preserve"><code class="huge"><span class="http-method">delete</span> /users/{username}</code></pre></div><div class="method-summary">Delete user (<span class="nickname">deleteUser</span>)</div><div class="method-notes">This can only be done by the logged in user.</div><h3 class="field-label">Path parameters</h3><div class="field-items"><div class="param">username (required)</div><div class="param-desc"><span class="param-type">Path Parameter</span> — The name that needs to be deleted </div></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">400</h4>
+							Invalid username supplied
+							<a href="#"></a><h4 class="field-label">404</h4>
+							User not found
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="getUserByName"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="get" xml:space="preserve"><code class="huge"><span class="http-method">get</span> /users/{username}</code></pre></div><div class="method-summary">Get user by user name (<span class="nickname">getUserByName</span>)</div><div class="method-notes"></div><h3 class="field-label">Path parameters</h3><div class="field-items"><div class="param">username (required)</div><div class="param-desc"><span class="param-type">Path Parameter</span> — The name that needs to be fetched. Use user1 for testing. </div></div><!-- field-items --><h3 class="field-label">Return type</h3><div class="return-type"><a href="#body_4">body_4</a></div><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/json</div><pre class="example" xml:space="preserve"><code>{
+									"firstName" : "aeiou",
+									"lastName" : "aeiou",
+									"password" : "aeiou",
+									"userStatus" : 6,
+									"phone" : "aeiou",
+									"id" : 0,
+									"email" : "aeiou",
+									"username" : "aeiou"
+							}</code></pre><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/xml</div><pre class="example" xml:space="preserve"><code><null>
+										<id>123456789</id>
+										<username>aeiou</username>
+										<firstname>aeiou</firstname>
+										<lastname>aeiou</lastname>
+										<email>aeiou</email>
+										<password>aeiou</password>
+										<phone>aeiou</phone>
+										<userstatus>123</userstatus>
+							</null></code></pre><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">200</h4>
+							successful operation
+							<a href="#body_4">body_4</a><h4 class="field-label">400</h4>
+							Invalid username supplied
+							<a href="#"></a><h4 class="field-label">404</h4>
+							User not found
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="loginUser"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="get" xml:space="preserve"><code class="huge"><span class="http-method">get</span> /users/login</code></pre></div><div class="method-summary">Logs user into the system (<span class="nickname">loginUser</span>)</div><div class="method-notes"></div><h3 class="field-label">Query parameters</h3><div class="field-items"><div class="param">username (optional)</div><div class="param-desc"><span class="param-type">Query Parameter</span> — The user name for login </div><div class="param">password (optional)</div><div class="param-desc"><span class="param-type">Query Parameter</span> — The password for login in clear text </div></div><!-- field-items --><h3 class="field-label">Return type</h3><div class="return-type">
+      
+								String
+							</div><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/json</div><pre class="example" xml:space="preserve"><code>"aeiou"</code></pre><h3 class="field-label">Example data</h3><div class="example-data-content-type">Content-Type: application/xml</div><pre class="example" xml:space="preserve"><code>aeiou</code></pre><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">200</h4>
+							successful operation
+							<a href="#String">String</a><h4 class="field-label">400</h4>
+							Invalid username/password supplied
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="logoutUser"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="get" xml:space="preserve"><code class="huge"><span class="http-method">get</span> /users/logout</code></pre></div><div class="method-summary">Logs out current logged in user session (<span class="nickname">logoutUser</span>)</div><div class="method-notes"></div><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">default</h4>
+							successful operation
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><div class="method"><a name="updateUser"></a><div class="method-path"><a class="up" href="#__Methods">Up</a><pre class="put" xml:space="preserve"><code class="huge"><span class="http-method">put</span> /users/{username}</code></pre></div><div class="method-summary">Updated user (<span class="nickname">updateUser</span>)</div><div class="method-notes">This can only be done by the logged in user.</div><h3 class="field-label">Path parameters</h3><div class="field-items"><div class="param">username (required)</div><div class="param-desc"><span class="param-type">Path Parameter</span> — name that need to be deleted </div></div><!-- field-items --><h3 class="field-label">Request body</h3><div class="field-items"><div class="param">body <a href="#body_5">body_5</a> (optional)</div><div class="param-desc"><span class="param-type">Body Parameter</span> — Updated user object </div></div><!-- field-items --><!--Todo: process Response Object and its headers, schema, examples --><h3 class="field-label">Produces</h3>
+							This API call produces the following media types according to the <span class="header">Accept</span> request header;
+							the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+							<ul><li value="1"><code>application/json</code></li><li value="2"><code>application/xml</code></li></ul><h3 class="field-label">Responses</h3><h4 class="field-label">400</h4>
+							Invalid user supplied
+							<a href="#"></a><h4 class="field-label">404</h4>
+							User not found
+						<a href="#"></a></div> <!-- method --><hr color="#dddddd" width="100%" size="0" align="center" /><h2><a name="__Models"></a>Models</h2>
+						[ Jump to <a href="#__Methods">Methods</a> ]
+					</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
