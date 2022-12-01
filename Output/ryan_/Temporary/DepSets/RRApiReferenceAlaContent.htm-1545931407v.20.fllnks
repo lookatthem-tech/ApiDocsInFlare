@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle="API Reference (Swagger Petstore Example)"
+  FileSearchable="true"
+  MasterPage="file:///F:/Software/PersonalFlareProjects/RROtherFlareProjects/MyGitHubRepostories/lookatthem-tech.github.io/ApiDocsInFlare/ApiDocsInFlare/Content/Resources/TemplatePages/ApiThreeColV2.flmsp"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/TemplatePages/ApiThreeColV2.flmsp" />
+    <Link
+      Url="Content/Resources/TableStyles/UKGTableStylesheet01.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/ApiReferenceStylesTwoColPgs.css" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/TemplatePages/ApiThreeColV2.flmsp" />
+    <Link
+      Url="Content/Resources/TableStyles/UKGTableStylesheet01.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/ApiReferenceStylesTwoColPgs.css" />
+  </LongLinks>
+  <Anchors />
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/TableStyles/UKGTableStylesheet01.css" />
+    <Url
+      Source="Content/Resources/Stylesheets/ApiReferenceStylesTwoColPgs.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

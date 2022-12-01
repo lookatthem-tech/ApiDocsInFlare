@@ -7,4 +7,7 @@
   <TocEntry
     Title="[%=System.LinkedTitle%]"
     Link="/Content/RRApiReference1Col.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/RRTest.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
 </CatapultToc>

@@ -56,7 +56,7 @@
 	{
 		background-position: center top;
 		background-repeat: no-repeat;
-		background-color: #00A170;
+		background-color: #4f566b;
 	}
 
 	/* Topbar Menu Styles */
@@ -1077,7 +1077,7 @@
 
 	.search-filter-content
 	{
-		top: 3em;
+		top: 30px;
 		background-color: #ffffff;
 	}
 

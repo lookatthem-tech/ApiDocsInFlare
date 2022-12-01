@@ -6,7 +6,7 @@
 	{
 		background-position: center top;
 		background-repeat: no-repeat;
-		background-color: #00A170;
+		background-color: #4f566b;
 	}
 
 	.title-bar-layout a.logo
@@ -978,7 +978,7 @@
 
 	.search-filter-content
 	{
-		top: 3em;
+		top: 30px;
 		background-color: #ffffff;
 	}
 

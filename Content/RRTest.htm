@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="Resources/TableStyles/UKGTableStylesheet01.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="Resources/Stylesheets/ApiReferenceStyles.css" rel="stylesheet" />
+        <meta name="author" content="" /><title>Token Overview</title>
+    </head>
+    <body>
+        <div class="topic-hero">
+            <div class="home-tiles-container">
+                <div class="home-tiles-two-row">
+			<div>
+		<MadCap:menuProxy mc-linked-toc="$topicHeadings" style="mc-toc-depth: 2;mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;" />
+					</div>
+                    <div>
+                        <h1>Refresh and Access Token Overview</h1>
+                        <h2>Token Authentication and Management APIs</h2>
+                        <p>Public APIs for managing RefreshTokens and APIAccessTokens for the user.</p>
+                        <aside class="notice2" MadCap:autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;">If your Organization is using SSO, like Okta, LDAP, and etc., then you will need to use the Alation UI to create a RefreshToken by going to base-url/account/auth.</aside>
+                        <h2>Description</h2>
+                        <ul>
+                            <li>
+                                <p><b>APIAccessToken:</b> A short-lived access token, which can be passed as the value for the 'TOKEN' header in the requests for other Alation APIs.</p>
+                            </li>
+                            <li>
+                                <p><b>RefreshToken:</b> A long living token the users can use to manage and create API Access Tokens, which can be used to interact with the other Alation APIs.</p>
+                            </li>
+                        </ul>
+                        <h2>Remember</h2>
+                        <p>The default expiration times for RefreshToken and APIAccessToken are 60 days and 24 hours respectively.  They can be configured using the alation_conf by the Server Admins if you need  different expiration times.  For example:</p>
+                        <div class="code2">
+                            <p>Login to the alation server, and using `alation_conf`, update the</p>
+                            <p>RefreshToken lifespan (in days),</p>
+                            <p>alation_conf alation.authentication.token.refresh_token_lifespan -s 180</p>
+                            <p>-- sets the expiration time for any new RefreshTokens created after  the change to be after 180 days(6 months) from creation.</p>
+                            <p>Login to the alation server, and using `alation_conf`, update the</p>
+                            <p>APIAccessToken lifespan (in hours),</p>
+                            <p>alation_conf alation.authentication.token.access_token_lifespan -s 2</p>
+                            <p>-- sets the expiration time for any new APIAccessTokens created after  the change to be after 2 hours from creation.</p>
+                        </div>
+                        <p>All these APIs, except <b>Create RefreshToken</b>, are  supported in SAML 2.0 Single Sign On environments. If you're using the SAML  authentication, you can create the refresh tokens using the Alation GUI by  visiting &lt;BASE_URL&gt;/account/auth page.</p>
+                        <h2>Open API 3.0 Specification</h2>
+                        <p>The above APIs are also described using the Open API 3.0 Specification (OAS). OAS is  a broadly adopted industry standard for describing APIs. </p>
+                        <p>To see the specification, replace {AlationInstanceURL} below with your Alation instance's URL and visit the link:</p>
+                        <p>
+			
+			{AlationInstanceURL}/openapi/api_authentication/
+			
+		</p>
+                        <aside class="notice2" MadCap:autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;">The Swagger UI is not enabled by default on an Alation instance. Please set the flag alation.feature_flags.enable_swagger to True using alation_conf. 
+		</aside>
+                        <h2>
+			Create RefreshToken
+			
+		</h2>
+                        <p>Creates a new RefreshToken for the user.</p>
+                        <h3>URL</h3>
+                        <p>POST /integration/v1/createRefreshToken/</p>
+                        <h3>Data Parameters
+			
+		</h3>
+                        <table style="mc-table-style: url('Resources/TableStyles/UKGTableStylesheet01.css');" class="TableStyle-UKGTableStylesheet01" cellspacing="0">
+                            <thead>
+                                <tr class="TableStyle-UKGTableStylesheet01-Head-Header1">
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Name</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Type</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Description</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadD-Column1-Header1">Required</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">username</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">string</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">
+                                        <p>Username of the user on Alation.</p>
+                                        <p>Example: "basava@alation.com" 
+								</p>
+                                    </td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Yes</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">password</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">string</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">
+                                        <p>Password associated with the user on Alation. </p>
+                                        <p>Example: "P@s$w0rd!"</p>
+                                    </td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">Yes</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body1">name</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body1">string</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body1">
+                                        <p>Create the RefreshToken with this name.</p>
+                                        <p>Example: "TableauRefreshToken" 
+								</p>
+                                    </td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyA-Column1-Body1">Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Response Structure
+			
+		</h3>
+                        <p><b>Content-Type:</b>
+			
+			text/json
+		</p>
+                        <p><b>Status:</b>
+			
+			201 CREATED
+		</p>
+                        <table style="mc-table-style: url('Resources/TableStyles/UKGTableStylesheet01.css');" class="TableStyle-UKGTableStylesheet01" cellspacing="0">
+                            <thead>
+                                <tr class="TableStyle-UKGTableStylesheet01-Head-Header1">
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Name</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Type</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadD-Column1-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">refresh_token</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">string</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">
+                                        <p>RefreshToken generated for the user in Alation.</p>
+                                        <p>Example:	"6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+							</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">user_id</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">integer</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">
+                                        <p>User ID associated with the refresh token who generated this token on Alation. </p>
+                                        <p>Example:	102
+							</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">created_at</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">dateTime</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Timezone aware date-time at which the refresh token is created at.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">name</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">string</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">
+                                        <p>Name of the RefreshToken. </p>
+                                        <p>Example:	"TableauRefreshToken"
+							</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">token_expires_at</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">dateTime</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Timezone aware date-time until which the RefreshToken is valid for.</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body2">token_status</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body2">string</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyA-Column1-Body2">
+                                        <p>Current status of the RefreshToken.</p>
+                                        <p>Enum:</p>
+                                        <p>"active",</p>
+                                        <p>"expired",</p>
+                                        <p>"revoked"</p>
+                                        <p>Example:	"active"
+							</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>
+			All Responses
+			
+		</h4>
+                        <table style="mc-table-style: url('Resources/TableStyles/UKGTableStylesheet01.css');" class="TableStyle-UKGTableStylesheet01" cellspacing="0">
+                            <thead>
+                                <tr class="TableStyle-UKGTableStylesheet01-Head-Header1">
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadE-Column1-Header1">Code</th>
+                                    <th class="TableStyle-UKGTableStylesheet01-HeadD-Column1-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">201</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Created</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">400</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">Malformed Request</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">401</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Unauthorized bad/missing token</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">403</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body2">Forbidden User cannot edit this resource</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">404</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">The specified resource was not found</td>
+                                </tr>
+                                <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyB-Column1-Body2">500</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyA-Column1-Body2">Internal Server Error</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Code Samples</h3>
+                        <h4>cURL</h4>
+                        <div class="code2">
+                            <p>BASE_URL="https://alation.yourcompany.com/integration/v1/createRefreshToken/"</p>
+                            <p>USER_ID="dave@example.com"</p>
+                            <p>PASSWORD="secret"</p>
+                            <p>NAME="My Precious"</p>
+                            <p># Create RefreshToken for user dave@example.com</p>
+                            <p>curl -X POST -H "Content-Type: application/x-www-form-urlencoded" "${BASE_URL}" </p>
+                            <p>--data-urlencode "username=${USER_ID}" --data-urlencode "password=${PASSWORD}" --data-urlencode "name=${NAME}" -v</p>
+                        </div>
+                        <h4>Python</h4>
+                        <div class="code2">
+                            <p>import requests</p>
+                            <p># Replace username, name and password with your login ID, desired token name and password.</p>
+                            <p>data = {'username':'dave@example.com', 'password':'secret', 'name': 'My Precious Token'}</p>
+                            <p>ALATION_AT_YOUR_COMPANY_URL="https://alation.yourcompany.com"</p>
+                            <p># Create RefreshToken for user: dave@example.com</p>
+                            <p>response = requests.post(</p>
+                            <p>'{base_url}/integration/v1/createRefreshToken/'.format(base_url=ALATION_AT_YOUR_COMPANY_URL</p>
+                            <p>), data=data)</p>
+                            <p>print(response.text)</p>
+                            <p># Sample Response</p>
+                            <p># {</p>
+                            <p># "user_id": 1151,</p>
+                            <p># "created_at": "2020-07-15T16:08:09.673391-07:00",</p>
+                            <p># "token_expires_at": "2020-09-13T16:08:09.672850-07:00",</p>
+                            <p># "token_status": "ACTIVE",</p>
+                            <p># "last_used_at": null,</p>
+                            <p># "name": "My Precious Token",</p>
+                            <p># "refresh_token":</p>
+                            <p># "mnuM-jp7uAOLWsG7ojs6rY-wweh2JVfKmNtWyPgVs-RdIysp4QyEHJtdd5Q5fECWEOsGVYxZ0eHy37j_lqoPcQ"</p>
+                            <p># }</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

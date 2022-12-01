@@ -8,7 +8,7 @@
   DefaultUrl="/Content/RRApiReference3Col.htm"
   ShowMadCapBacklink="false"
   MasterToc="/Project/TOCs/TOC.fltoc"
-  MasterStylesheet="/Content/Resources/Stylesheets/CherLfTest2Mainstyles.css"
+  MasterStylesheet="/Content/Resources/Stylesheets/PetStoreMainstyles.css"
   MasterStylesheetOverride="true"
   Skin="/Project/Skins/Top-Navigation.flskn"
   TopNavTocPath="true">

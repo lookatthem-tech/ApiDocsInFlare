@@ -17,9 +17,11 @@
           <Property
             Name="PaddingRight">15px</Property>
           <Property
-            Name="BackgroundColor">#337373</Property>
-          <Property
             Name="Color">#ffffff</Property>
+          <Property
+            Name="MarginTop">20px</Property>
+          <Property
+            Name="BackgroundColor">#4f566b</Property>
         </Properties>
       </Style>
       <Style
@@ -55,5 +57,5 @@
   </Stylesheet>
   <Strings />
   <WebHelpOptions
-    EnableSticky="None" />
+    EnableSticky="All" />
 </CatapultSkin>

@@ -1212,7 +1212,7 @@ ul.menu._Skins_Topics_Menu.mc-component
 	line-height: 1em;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 0px;
+	margin-top: 20px;
 	margin-bottom: 0px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -1221,7 +1221,7 @@ ul.menu._Skins_Topics_Menu.mc-component
 	width: 100%;
 	height: auto;
 	max-height: 100%;
-	background-color: #337373;
+	background-color: #4f566b;
 }
 
 ul.menu._Skins_Topics_Menu.mc-component a

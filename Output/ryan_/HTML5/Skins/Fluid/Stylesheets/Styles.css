@@ -281,7 +281,7 @@ nav.title-bar
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: #00A170;
+	background-color: #4f566b;
 }
 
 nav.title-bar .menu-icon
@@ -377,12 +377,12 @@ nav.title-bar .menu-icon
 {
 	/* override .row Foundation css styles */
 	/* supports V11 home page template */
-	margin-left: 0;
 	margin-right: 0;
 	max-width: none;
 	float: right;
 	display: block;
-	width: 45%;
+	width: 66%;
+	margin-left: 10%;
 	margin-top: 10px;
 }
 
@@ -398,7 +398,7 @@ nav.title-bar .menu-icon
 	top: 0;
 	left: 0;
 	position: relative;
-	height: 3em;
+	height: 30px;
 	border-left: none;
 	border-right: none;
 	border-top: none;
@@ -434,7 +434,7 @@ nav.title-bar .menu-icon
 	line-height: 2em;
 	padding-right: 5px;
 	cursor: pointer;
-	height: 3em;
+	height: 30px;
 	border-top: none;
 	border-bottom: none;
 	border-left: solid 1px #000000;
@@ -479,7 +479,7 @@ nav.title-bar .menu-icon
 	overflow: auto;
 	z-index: 1;
 	white-space: nowrap;
-	top: 3em;
+	top: 30px;
 	color: #45494c;
 	background-color: #ffffff;
 }
@@ -1640,7 +1640,7 @@ div.central-dropdown-content > a:hover
 
 .search-bar .search-submit
 {
-	height: 3em;
+	height: 30px;
 	border-right: none;
 	border-top: none;
 	border-bottom: none;

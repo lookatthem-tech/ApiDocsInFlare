@@ -12,22 +12,27 @@ body
 
 a
 {
-	color: #2d82dc;
+	color: red;
 }
 
 a:link
 {
-	color: #2d82dc;
+	color: purple;
+}
+
+a.up
+{
+	color: purple;
 }
 
 a:visited
 {
-	color: #2d82dc;
+	color: purple;
 }
 
 a:hover
 {
-	color: #BED230;
+	color: purple;
 }
 
 a.MCBreadcrumbsLink
@@ -38,12 +43,12 @@ a.MCBreadcrumbsLink
 
 a.MCBreadcrumbsLink:visited
 {
-	color: #000000;
+	color: purple;
 }
 
 a.MCBreadcrumbsLink:hover
 {
-	color: #BED230;
+	color: purple;
 }
 
 div.example
@@ -152,6 +157,7 @@ h1
 	margin-bottom: 8px;
 	padding-bottom: 10px;
 	margin-top: 30px;
+	color: #404040;
 }
 
 h1.Appendix

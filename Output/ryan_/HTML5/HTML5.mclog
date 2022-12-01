@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2022 r2 Generated HTML5.fltar" Date="2022-11-28T19:53:09.5141993-05:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2022 r2 Generated HTML5.fltar" Date="2022-11-30T20:04:49.2937906-05:00" Branch="main" Commit="c2c4f068b121ecc1707ca46843784f65aebf1660">
     <Messages>Compiling target HTML5...
 Removing previously generated content...
 Loading skin info...
@@ -11,17 +11,17 @@ Collecting source files...
 Processing source files...
 Processing CSS: Resources\Stylesheets\ApiReferenceStyles.css...
 Processing CSS: Resources\Stylesheets\ApiReferenceStylesTwoColPgs.css...
-Processing CSS: Resources\Stylesheets\CherLfTest2Mainstyles.css...
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\NoteIcon.png
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\QuotationMark.png
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosed.png
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpen.png
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosedSecondLevel.png
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpenSecondLevel.png
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\Bullet1.png
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\Bullet2.png
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\Bullet1Print.eps
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\Bullet2Print.eps
+Processing CSS: Resources\Stylesheets\PetStoreMainstyles.css...
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\NoteIcon.png
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\QuotationMark.png
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosed.png
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpen.png
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosedSecondLevel.png
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpenSecondLevel.png
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\Bullet1.png
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\Bullet2.png
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\Bullet1Print.eps
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\Bullet2Print.eps
 Processing CSS: Resources\Stylesheets\Styles.css...
 Processing CSS: Resources\TableStyles\Alternate-Row-Color.css...
 Processing CSS: Resources\TableStyles\UKGTableStylesheet01.css...
@@ -30,9 +30,11 @@ Processing topic: RRApiReference3Col.htm...
 Applying template page ApiThreeColV2.flmsp...
 Generated RRApiReference3Col.htm
 Processing topic: RRApiReference1Col.htm...
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\hello@helloreverb.com
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\hello@helloreverb.com
 Applying template page ApiThreeColV2.flmsp...
 Generated RRApiReference1Col.htm
+Processing topic: RRTest.htm...
+Generated RRTest.htm
 Processing topic: B-Feature-Topics\Features.htm...
 Generated B-Feature-Topics\Features.htm
 Processing topic: CherLfTest3.htm...
@@ -46,18 +48,14 @@ Processing topic: D-Reference\Tips.htm...
 Generated D-Reference\Tips.htm
 Processing topic: Home.htm...
 Topic marked 'not searchable': Home.htm...
-Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpen.png
-Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosed.png
-Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpen.png
-Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosed.png
-Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpen.png
-Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosed.png
+Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpen.png
+Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosed.png
+Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpen.png
+Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosed.png
+Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpen.png
+Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosed.png
 Applying template page Home-Page.flmsp...
 Generated Home.htm
-Processing topic: RRApiReference1Col222.htm...
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\hello@helloreverb.com
-Applying template page ApiThreeColV2.flmsp...
-Generated RRApiReference1Col222.htm
 Processing topic: A-Introduction-Topics\Basic-Steps.htm...
 Generated A-Introduction-Topics\Basic-Steps.htm
 Processing topic: B-Feature-Topics\Feature3.htm...
@@ -65,9 +63,9 @@ Generated B-Feature-Topics\Feature3.htm
 Processing topic: D-Reference\FAQs.htm...
 Generated D-Reference\FAQs.htm
 Processing topic: CherLfTest2.htm...
-Link points outside project file:///F:/Software/PersonalFlareProjects/RROtherFlareProjects/Skins/Default/Stylesheets/Images/transparent.gif
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\images\navbar_32x16.png
-Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\images\logo.png
+Link points outside project file:///F:/Software/PersonalFlareProjects/RROtherFlareProjects/MyGitHubRepostories/lookatthem-tech.github.io/Skins/Default/Stylesheets/Images/transparent.gif
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\images\navbar_32x16.png
+Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\images\logo.png
 Applying template page ApiThreeCol.flmsp...
 Generated CherLfTest2.htm
 Processing topic: C-Procedure-Topics\Procedure3.htm...
@@ -82,6 +80,9 @@ Processing topic: C-Procedure-Topics\Procedures.htm...
 Generated C-Procedure-Topics\Procedures.htm
 Processing topic: B-Feature-Topics\Feature2.htm...
 Generated B-Feature-Topics\Feature2.htm
+Processing topic: RRApiReferenceAlaContent.htm...
+Applying template page ApiThreeColV2.flmsp...
+Generated RRApiReferenceAlaContent.htm
 Processing topic: A-Introduction-Topics\Getting-Started.htm...
 Generated A-Introduction-Topics\Getting-Started.htm
 Generating micro content...
@@ -105,34 +106,33 @@ Generated Skins\Default\Stylesheets\TextEffects.micro-content.css
 Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated Default.htm
 Saving result set...
-Ignored Compiler Warnings: 25
-Output generated in 10 second(s).
+Ignored Compiler Warnings: 28
+Output generated in 11 second(s).
 
 Done
-Saving log to "F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Output\ryan_\HTML5\HTML5.mclog"
+Saving log to "F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Output\ryan_\HTML5\HTML5.mclog"
 </Messages>
     <Warnings>
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\NoteIcon.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\QuotationMark.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosed.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpen.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosedSecondLevel.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpenSecondLevel.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\Bullet1.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\Bullet2.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\Bullet1Print.eps&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/CherLfTest2Mainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\Bullet2Print.eps&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/RRApiReference1Col.htm" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\hello@helloreverb.com&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpen.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
-        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosed.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
-        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpen.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
-        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosed.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
-        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownOpen.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
-        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\Resources\Images\DropDownClosed.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
-        <LogEntry File="../../../Content/RRApiReference1Col222.htm" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\hello@helloreverb.com&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/CherLfTest2.htm" Message="Link points outside project file:///F:/Software/PersonalFlareProjects/RROtherFlareProjects/Skins/Default/Stylesheets/Images/transparent.gif&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10056" />
-        <LogEntry File="../../../Content/CherLfTest2.htm" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\images\navbar_32x16.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
-        <LogEntry File="../../../Content/CherLfTest2.htm" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\AlationAPIDocsTesting\AlationAPIDocsTest\Content\images\logo.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\NoteIcon.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\QuotationMark.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosed.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpen.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosedSecondLevel.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpenSecondLevel.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\Bullet1.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\Bullet2.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\Bullet1Print.eps&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/PetStoreMainstyles.css" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\Bullet2Print.eps&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/RRApiReference1Col.htm" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\hello@helloreverb.com&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpen.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
+        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosed.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
+        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpen.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
+        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosed.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
+        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownOpen.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
+        <LogEntry Message="Image does not exist - F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\Resources\Images\DropDownClosed.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="70001" />
+        <LogEntry File="../../../Content/CherLfTest2.htm" Message="Link points outside project file:///F:/Software/PersonalFlareProjects/RROtherFlareProjects/MyGitHubRepostories/lookatthem-tech.github.io/Skins/Default/Stylesheets/Images/transparent.gif&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10056" />
+        <LogEntry File="../../../Content/CherLfTest2.htm" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\images\navbar_32x16.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
+        <LogEntry File="../../../Content/CherLfTest2.htm" Message="Missing linked source file: F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\ApiDocsInFlare\Content\images\logo.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5" ErrorID="10001" />
     </Warnings>
     <Errors />
 </MadCapLog>

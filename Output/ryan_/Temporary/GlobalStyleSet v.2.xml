@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultGlobalStyleCache
-  SavedSource="file:///F:/Software/PersonalFlareProjects/RROtherFlareProjects/AlationAPIDocsTesting/AlationAPIDocsTest/Output/ryan_/Temporary/GlobalStyleSet v.2.xml">
+  SavedSource="file:///F:/Software/PersonalFlareProjects/RROtherFlareProjects/MyGitHubRepostories/lookatthem-tech.github.io/ApiDocsInFlare/ApiDocsInFlare/Output/ryan_/Temporary/GlobalStyleSet v.2.xml">
   <Media>
     <Medium
       Name="only screen and (max-width: 1279px)" />
     <Medium
       Name="only screen and (max-width: 900px)" />
     <Medium
-      Name="tablet" />
-    <Medium
-      Name="mobile" />
-    <Medium
       Name="print" />
     <Medium
       Name="only screen and (max-width: 767px)" />
+    <Medium
+      Name="tablet" />
+    <Medium
+      Name="mobile" />
   </Media>
   <Map>
     <Tag
@@ -30,13 +30,11 @@
     <Tag
       Name="h3" />
     <Tag
+      Name="h4" />
+    <Tag
       Name="p">
       <Class
         Name="ruby" />
-      <Class
-        Name="info-title" />
-      <Class
-        Name="info-content" />
       <Class
         Name="CompanyInformation1" />
       <Class
@@ -172,18 +170,6 @@
       <Class
         Name="home-tiles-three-row" />
       <Class
-        Name="footer" />
-      <Class
-        Name="outer-row" />
-      <Class
-        Name="home-master-page-footer" />
-      <Class
-        Name="info-section01" />
-      <Class
-        Name="info-section02" />
-      <Class
-        Name="search-container" />
-      <Class
         Name="home-tiles-two-row" />
       <Class
         Name="example" />
@@ -246,17 +232,6 @@
         Name="menu2" />
     </Tag>
     <Tag
-      Name="a">
-      <Class
-        Name="MCBreadcrumbsLink" />
-      <Class
-        Name="home-tiles" />
-      <Class
-        Name="GlossaryPageTerm" />
-      <Class
-        Name="Popup" />
-    </Tag>
-    <Tag
       Name="MadCap|xref">
       <Class
         Name="IndexPageNumber" />
@@ -268,6 +243,17 @@
         Name="ListOfPageNumber" />
       <Class
         Name="RelLinkPageNumber" />
+    </Tag>
+    <Tag
+      Name="a">
+      <Class
+        Name="MCBreadcrumbsLink" />
+      <Class
+        Name="home-tiles" />
+      <Class
+        Name="GlossaryPageTerm" />
+      <Class
+        Name="Popup" />
     </Tag>
     <Tag
       Name="img">
@@ -391,8 +377,6 @@
       <Class
         Name="topic" />
     </Tag>
-    <Tag
-      Name="h4" />
     <Tag
       Name="nav">
       <Class
@@ -766,10 +750,10 @@
     <Url
       Source="Resources/TableStyles/UKGTableStylesheet01.css" />
     <Url
-      Source="../../../../../UKG Flare Installation/2022 Flare Installation RR/Flare 2022 r2/Flare.app/Resources/Schemas/xhtml.css" />
+      Source="../../../../../../../UKG Flare Installation/2022 Flare Installation RR/Flare 2022 r2/Flare.app/Resources/Schemas/xhtml.css" />
     <Url
-      Source="../../../../../UKG Flare Installation/2022 Flare Installation RR/Flare 2022 r2/Flare.app/Resources/Schemas/MadCapEditor.css" />
+      Source="../../../../../../../UKG Flare Installation/2022 Flare Installation RR/Flare 2022 r2/Flare.app/Resources/Schemas/MadCapEditor.css" />
     <Url
-      Source="../../../../../UKG Flare Installation/2022 Flare Installation RR/Flare 2022 r2/Flare.app/Resources/Schemas/MadCapEditorFlare.css" />
+      Source="../../../../../../../UKG Flare Installation/2022 Flare Installation RR/Flare 2022 r2/Flare.app/Resources/Schemas/MadCapEditorFlare.css" />
   </SourceUrls>
 </CatapultGlobalStyleCache>

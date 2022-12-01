@@ -3,6 +3,7 @@
     <head>
         <link href="Resources/TableStyles/UKGTableStylesheet01.css" rel="stylesheet" MadCap:stylesheetType="table" />
         <link href="Resources/Stylesheets/ApiReferenceStyles.css" rel="stylesheet" />
+        <meta name="author" content="" /><title>API Reference</title>
     </head>
     <body>
         <div class="topic-hero">
@@ -22,7 +23,7 @@
                         <aside class="notice" MadCap:autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;">You must replace <code>meowmeowmeow</code> with your personal API key.</aside>
                     </div>
                     <div>
-                        <p>Use this code:</p>
+                        <h4>Use this code:</h4>
                         <div class="code">
                             <p>require = 'pet'</p>
                             <p>api = pet :: APIClient.authorize!('meowmeowmeow')</p>
@@ -42,6 +43,7 @@
                     </div>
                     <div>
                         <h1 id="kittens">Pets</h1>
+                        <p>The following sections cover the endpoints for pets.</p>
                         <h2 id="get-all-kittens">Get All Pets</h2>
                         <p>This endpoint retrieves all pets.</p>
                         <h3 id="http-request">HTTP Request</h3>
@@ -73,7 +75,7 @@
                         <aside class="success">Remember to authenticate!</aside>
                     </div>
                     <div class="DivThree">
-                        <p>Use this code:</p>
+                        <h4>Use this code:</h4>
                         <div class="code">
                             <p>require  'pet'</p>
                             <p>api  =  pet::APIClient.authorize!('meowmeowmeow')</p>
@@ -87,8 +89,11 @@
                             <p>let  api  =  pet.authorize('meowmeowmeow');</p>
                             <p>let  kittens  =  api.pets.get();</p>
                         </div>
-                        <p>The above command returns JSON structured like this:</p>
-                        <p>[   {   "id":   1,   "name":   "Fluffums",   "breed":   "calico",   "fluffiness":   6,   "cuteness":   7   },   {   "id":   2,   "name":   "Max",   "breed":   "unknown",   "fluffiness":   5,   "cuteness":   10   }   ]</p>
+                        <p>The preceding command returns JSON structured like this:</p>
+                        <div class="code">
+                            <p>[   {   "id":   1,   "name":   "Fluffums",   "breed":   "calico",   "fluffiness":   6,   "cuteness":   7   },</p>
+                            <p>    {   "id":   2,   "name":   "Max",   "breed":   "unknown",   "fluffiness":   5,   "cuteness":   10   }   ]</p>
+                        </div>
                     </div>
                 </div>
                 <div class="home-tiles-three-row">
@@ -119,7 +124,7 @@
                         </table>
                     </div>
                     <div class="DivThree">
-                        <p>Use this code:</p>
+                        <h4>Use this code:</h4>
                         <div class="code">
                             <p>require  'pet'</p>
                             <p>api  =  pet::APIClient.authorize!('meowmeowmeow')</p>
@@ -133,8 +138,10 @@
                             <p>let  api  =  pet.authorize('meowmeowmeow');</p>
                             <p>let  max  =  api.pets.get(2);</p>
                         </div>
-                        <p>The above command returns JSON structured like this:</p>
-                        <p>{   "id":   2,   "name":   "Max",   "breed":   "unknown",   "fluffiness":   5,   "cuteness":   10   }</p>
+                        <p>The preceding command returns JSON structured like this:</p>
+                        <div class="code">
+                            <p>{   "id":   2,   "name":   "Max",   "breed":   "unknown",   "fluffiness":   5,   "cuteness":   10   }</p>
+                        </div>
                     </div>
                 </div>
                 <div class="home-tiles-three-row">
@@ -164,7 +171,7 @@
                         </table>
                     </div>
                     <div class="DivThree">
-                        <p>Use this code:</p>
+                        <h4>Use this code:</h4>
                         <div class="code">
                             <p>require  'pet'</p>
                             <p>api  =  pet::APIClient.authorize!('meowmeowmeow')</p>
@@ -179,8 +186,10 @@
                             <p>let  api  =  pet.authorize('meowmeowmeow');</p>
                             <p>let  max  =  api.pets.delete(2);</p>
                         </div>
-                        <p>The above command returns JSON structured like this:</p>
-                        <p>{   "id":   2,   "deleted"   :   ":("   }</p>
+                        <p>The preceding command returns JSON structured like this:</p>
+                        <div class="code">
+                            <p>{   "id":   2,   "deleted"   :   ":("   }</p>
+                        </div>
                     </div>
                 </div>
                 <div class="home-tiles-three-row">
@@ -200,7 +209,7 @@
                             <tbody>
                                 <tr class="TableStyle-UKGTableStylesheet01-Body-Body1">
                                     <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body1">400</td>
-                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Bad Request -- Your request sucks.</td>
+                                    <td class="TableStyle-UKGTableStylesheet01-BodyD-Column1-Body1">Bad Request -- Please try again.</td>
                                 </tr>
                                 <tr class="TableStyle-UKGTableStylesheet01-Body-Body2">
                                     <td class="TableStyle-UKGTableStylesheet01-BodyE-Column1-Body2">401</td>

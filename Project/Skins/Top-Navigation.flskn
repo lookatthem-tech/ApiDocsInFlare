@@ -38,8 +38,6 @@
           <Property
             Name="Order">2</Property>
           <Property
-            Name="Width">45%</Property>
-          <Property
             Name="BorderTopLeftRadius">3px</Property>
           <Property
             Name="BorderTopRightRadius">3px</Property>
@@ -48,7 +46,11 @@
           <Property
             Name="BorderBottomLeftRadius">3px</Property>
           <Property
-            Name="Height">3em</Property>
+            Name="Width">66%</Property>
+          <Property
+            Name="MarginLeft">10%</Property>
+          <Property
+            Name="Height">30px</Property>
         </Properties>
       </Style>
       <Style
@@ -100,7 +102,7 @@
         Name="Header">
         <Properties>
           <Property
-            Name="BackgroundColor">#00A170</Property>
+            Name="BackgroundColor">#4f566b</Property>
         </Properties>
       </Style>
       <Style
