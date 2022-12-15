@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle="Guides"
+  FileSearchable="true"
+  MasterPage="file:///F:/Software/PersonalFlareProjects/RROtherFlareProjects/MyGitHubRepostories/lookatthem-tech.github.io/ApiDocsInFlare/Content/Resources/TemplatePages/ApiThreeColV2.flmsp"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="Content/Resources/TemplatePages/ApiThreeColV2.flmsp" />
+    <Link
+      Url="Content/Resources/TableStyles/UKGTableStylesheet01.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/ApiReferenceStylesTwoColPgs.css" />
+    <Link
+      Url="Content/RRApiReference1Col.htm" />
+    <Link
+      Url="http://swagger.io/" />
+    <Link
+      Url="Content/hello@helloreverb.com" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="Content/Resources/TemplatePages/ApiThreeColV2.flmsp" />
+    <Link
+      Url="Content/Resources/TableStyles/UKGTableStylesheet01.css" />
+    <Link
+      Url="Content/Resources/Stylesheets/ApiReferenceStylesTwoColPgs.css" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#Pet" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#addPet" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#deletePet" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#findPetsByStatus" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#findPetsByTags" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#getPetById" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#updatePet" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#updatePetWithForm" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#Store" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#deleteOrder" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#getOrderById" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#placeOrder" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#User" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#createUser" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#createUsersWithArrayInput" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#createUsersWithListInput" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#deleteUser" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#getUserByName" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#loginUser" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#logoutUser" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#updateUser" />
+    <Link
+      Url="http://swagger.io/" />
+    <Link
+      Url="Content/hello@helloreverb.com" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#__Models" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#__Methods" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#body_1" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#inline_response_200" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#body" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#inline_response_200_1" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#body_2" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#body_3" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#body_4" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#String" />
+    <Link
+      Url="Content/RRApiReference1Col.htm#body_5" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="__Methods" />
+    <Anchor
+      Name="Pet" />
+    <Anchor
+      Name="addPet" />
+    <Anchor
+      Name="deletePet" />
+    <Anchor
+      Name="findPetsByStatus" />
+    <Anchor
+      Name="findPetsByTags" />
+    <Anchor
+      Name="getPetById" />
+    <Anchor
+      Name="updatePet" />
+    <Anchor
+      Name="updatePetWithForm" />
+    <Anchor
+      Name="Store" />
+    <Anchor
+      Name="deleteOrder" />
+    <Anchor
+      Name="getOrderById" />
+    <Anchor
+      Name="placeOrder" />
+    <Anchor
+      Name="User" />
+    <Anchor
+      Name="createUser" />
+    <Anchor
+      Name="createUsersWithArrayInput" />
+    <Anchor
+      Name="createUsersWithListInput" />
+    <Anchor
+      Name="deleteUser" />
+    <Anchor
+      Name="getUserByName" />
+    <Anchor
+      Name="loginUser" />
+    <Anchor
+      Name="logoutUser" />
+    <Anchor
+      Name="updateUser" />
+    <Anchor
+      Name="__Models" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets>
+    <Url
+      Source="Content/Resources/TableStyles/UKGTableStylesheet01.css" />
+    <Url
+      Source="Content/Resources/Stylesheets/ApiReferenceStylesTwoColPgs.css" />
+  </Stylesheets>
+</CatapultFileLinkSet>

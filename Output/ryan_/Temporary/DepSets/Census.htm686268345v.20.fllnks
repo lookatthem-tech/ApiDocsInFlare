@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileLinkSet
+  FileTitle=""
+  FileSearchable="true"
+  OnlyLocalStylesheets="false"
+  FileTimeEstimate="0"
+  FilePriority="0">
+  <Links>
+    <Link
+      Url="https://docs.getcensus.com/sources/snowflake" />
+    <Link
+      Url="https://docs.getcensus.com/sources/sql-server" />
+    <Link
+      Url="https://docs.getcensus.com/sources/overview" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/hubspot" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/salesforce" />
+    <Link
+      Url="https://docs.getcensus.com/" />
+    <Link
+      Url="Content/Census.htm" />
+    <Link
+      Url="Content/Census000.png" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/custom-api" />
+    <Link
+      Url="https://docs.getcensus.com/basics/core-concept" />
+    <Link
+      Url="Content/Census001.png" />
+    <Link
+      Url="https://docs.getcensus.com/basics/segmentation" />
+    <Link
+      Url="Content/Census002.png" />
+  </Links>
+  <LongLinks>
+    <Link
+      Url="https://docs.getcensus.com/sources/snowflake" />
+    <Link
+      Url="https://docs.getcensus.com/sources/sql-server" />
+    <Link
+      Url="https://docs.getcensus.com/sources/overview" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/hubspot" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/salesforce" />
+    <Link
+      Url="https://docs.getcensus.com/" />
+    <Link
+      Url="Content/Census.htm#Connect3" />
+    <Link
+      Url="Content/Census.htm#Connect" />
+    <Link
+      Url="Content/Census.htm#Connect2" />
+    <Link
+      Url="Content/Census.htm#Create" />
+    <Link
+      Url="Content/Census.htm#Create2" />
+    <Link
+      Url="Content/Census.htm#Create3" />
+    <Link
+      Url="Content/Census000.png" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/custom-api#list_objects" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/custom-api#list_fields" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/custom-api#supported_operations" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/custom-api#get_sync_speed" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/custom-api#sync_batch" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/custom-api#security-considerations" />
+    <Link
+      Url="https://docs.getcensus.com/destinations/custom-api#demo-destination" />
+    <Link
+      Url="https://docs.getcensus.com/basics/core-concept#running-syncs" />
+    <Link
+      Url="https://docs.getcensus.com/basics/core-concept#understanding-sync-history" />
+    <Link
+      Url="Content/Census001.png" />
+    <Link
+      Url="https://docs.getcensus.com/basics/segmentation" />
+    <Link
+      Url="Content/Census002.png" />
+  </LongLinks>
+  <Anchors>
+    <Anchor
+      Name="Connect" />
+    <Anchor
+      Name="Connect2" />
+    <Anchor
+      Name="Connect3" />
+    <Anchor
+      Name="Create" />
+    <Anchor
+      Name="Create2" />
+    <Anchor
+      Name="Create3" />
+  </Anchors>
+  <Keywords />
+  <Concepts />
+  <ConceptControlNames />
+  <IndexControlNames />
+  <Variables />
+  <FileConditions />
+  <FileTags />
+  <AllConditions />
+  <Stylesheets />
+</CatapultFileLinkSet>

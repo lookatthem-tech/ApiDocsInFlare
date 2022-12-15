@@ -1,166 +1,282 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<html>
+<!DOCTYPE html>
+<html class="_Skins_Top_Navigation" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <body>
-        <head><title></title>
-        </head>
-        <h1>Census enables anyone to be a data engineer!</h1>
-        <p>With Census, you don’t have to be a data engineer or a SQL programmer to configure your Data Warehouse to be a single source that feeds all of your company’s business apps.</p>
-        <p>Census enables you to easily create connections from your Data Warehouse (Data Sources such as <a target="_blank" href="https://docs.getcensus.com/sources/snowflake">Snowflake</a>, <a target="_blank" href="https://docs.getcensus.com/sources/sql-server">SQL Server</a>, and <a target="_blank" href="https://docs.getcensus.com/sources/overview">many more</a>) to your business applications (Destinations such as <a target="_blank" href="https://docs.getcensus.com/destinations/hubspot">Hubspot</a>, <a target="_blank" href="https://docs.getcensus.com/destinations/salesforce">Salesforce</a>, and <a target="_blank" href="https://docs.getcensus.com/">many more</a>). Then Census maintains the flow of your data (via Syncs) from Source to Destination.</p>
-        <p>If you don't find a Destination you need in the large list of preconfigured Destinations in Census, you can easily build a <a target="_blank" href="#_H2_Connect_Census">Census Custom API</a> to work with your Destination.</p>
-        <p>In this article, you’ll learn how easy it is to:</p>
-        <ul>
-            <li>
-                <p>Connect Census to your <a target="_blank" href="#_h2_Connect_Census_1">data source</a>.</p>
-            </li>
-            <li>
-                <p>Connect Census to your <a target="_blank" href="#_h2_Connect_Census_2">destination app</a>.</p>
-            </li>
-            <li>
-                <p>Create a <a target="_blank" href="#_h2_Create_a">Model</a> (data subset).</p>
-            </li>
-            <li>
-                <p>Create a <a target="_blank" href="#_h2_Create_a_1">Census Sync</a> between your source and destination.</p>
-            </li>
-            <li>
-                <p>Further refine your data with reusable <a target="_blank" href="#_h2_Create_a_2">Census Segments</a>.</p>
-            </li>
-        </ul>
-        <h2>Connect Census to your data source</h2>
-        <p>The first step on your journey to analytical bliss is to create the connection from Census to your data source.</p>
-        <p>Check the specific instructions for your data source in the <a target="_blank" href="https://docs.getcensus.com/sources/overview">Census Docs</a>.</p>
-        <p>Generally, those instructions are as easy as this:</p>
-        <ol>
-            <li>
-                <p>Open Census, go to <b>Connections</b>, click <b>Data Sources</b>, click <b>Add Data Source</b>, and select your data source.</p>
-            </li>
-            <li>
-                <p>Fill out a few fields in Census. Check the page for your data source in the <a target="_blank" href="https://docs.getcensus.com/sources/overview">Census Docs</a>, because you will often find a preconfigured script or other information that makes filling out these fields even easier.</p>
-                <p>
-                    <img src="Census000.png" class="thumbnail" />
-                </p>
-            </li>
-            <li>
-                <p>Click the <b>Test</b> button to perform a test that verifies your connection.</p>
-            </li>
-        </ol>
-        <p>That's it! Census is now connected to your data source. You're ready to connect Census to your destination app.</p>
-        <h2>Connect Census to your destination app</h2>
-        <p>Now you can harness the power of Census by connecting Census to your destination app, and then using Census to sync from your connected data source to your destination.</p>
-        <p>Check the specific instructions for your destination app in the <a target="_blank" href="https://docs.getcensus.com/sources/overview">Census Docs</a>. For the full list of destinations and instructions, see <a target="_blank" href="https://docs.getcensus.com/">this page</a>.</p>
-        <p>Generally, those instructions go something like this:</p>
-        <ol>
-            <li>
-                <p>Gather some basic information from your destination app, which can include Administrator credentials, API Key, API Secret, and so on.</p>
-            </li>
-            <li>
-                <p>In Census, go to the <b>Connections</b> page, click <b>Add Service</b>, and select your destination app.</p>
-            </li>
-            <li>
-                <p>Complete the other fields of information that Census needs, which generally include the information you gathered in Step 1.</p>
-            </li>
-            <li>
-                <p>Click <b>Connect</b>.</p>
-            </li>
-        </ol>
-        <p>You now have your data source and destination connected to Census. You're ready to specify the data you want to sync between the source and destination.</p>
-        <h2>Connect Census to other destination apps with Census Custom API</h2>
-        <p>With Census, you aren’t limited to connecting to only destinations with our preconfigured destination app connections. You can create a Census Custom API to connect to any app that has a URL that Census can access over the internet!</p>
-        <p>At the highest level, you can think of your Census Custom API in two phases:</p>
-        <ul>
-            <li>
-                <p>In the Sync Planning phase, you use three API methods: list_objects, list_fields, and supported_operations. These three methods, respectively, get a list of objects to write to, a list of fields for those objects, and the types of operations (such as update) that can be performed on those objects. For full details about these methods, see <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#list_objects">list_objects</a>, <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#list_fields">list_fields</a>, and <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#supported_operations">supported_operations</a>.</p>
-            </li>
-            <li>
-                <p>In the Sync Execution phase, you use these two methods: get_sync_speed, which controls the speed at which Census sends data to your API; and sync_batch, which syncs a batch of records to your destination and reports success or failure. For full details about these methods, see <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#get_sync_speed">get_sync_speed</a> and <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#sync_batch">sync_batch</a>.</p>
-            </li>
-        </ul>
-        <div class="Note" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="&lt;span style=&quot;color: #000099;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;b&gt;Note: &lt;/b&gt;&lt;/span&gt;">Your Custom API must have one other method, named test_connection, which works with Census’s Test Connection button to provide an easy way to verify that your connection is working.</div>
-        <p>For your Census Custom API, you can currently perform three operations on your data:</p>
-        <ul>
-            <li>
-                <p><b>insert</b>: This only creates records in your destination. It can’t modify records.</p>
-            </li>
-            <li>
-                <p><b>update</b>: This only modifies records in your destination. It can’t create records.</p>
-            </li>
-            <li>
-                <p><b>upsert</b>: This is the most commonly used operation. It can create and modify records in your destination.</p>
-            </li>
-        </ul>
-        <p>Census helps you ensure that your Custom API is secure. Check out <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#security-considerations">Security Considerations</a> to learn more.</p>
-        <p>To get a feel for what you can do with a Census Custom API, configure a quick <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#demo-destination">Demo API</a>.</p>
-        <h2>Create a Census Model for your data source</h2>
-        <p>Models in Census are queries that define a subset of data from your data source that you want Census to sync into your destination app. If you already have some data modeling in your data source, your Census Model can be simple. Or if you have a data modeling integration with dbt or Looker, you can connect that with your Census Model. If you need to model from scratch, that is also no problem. You can create a simple or complex Census Model to fit your needs.</p>
-        <p>Here are the general steps:</p>
-        <ol>
-            <li>
-                <p>In Census, go to <b>Models</b>, and click <b>Add Model</b>.</p>
-            </li>
-            <li>
-                <p>In the <b>Query</b> field, enter the SQL that defines your needed subset of data.</p>
-            </li>
-            <li>
-                <p>Click <b>Preview</b> to verify that your query retrieves the data you want.</p>
-            </li>
-            <li>
-                <p>Click <b>Save Model</b>.</p>
-            </li>
-        </ol>
-        <h2>Create a Census Sync</h2>
-        <p>In Census, your Sync will define how you want Census to sync your data (based on a Census Model or as a whole) between your data source and your destination app.</p>
-        <p>With Syncs, you harness the great power of Census. Census Syncs don’t rely on events to initiate a sync. They sync whenever data in your model changes, so that your data source and your destination are always in sync!</p>
-        <p>Here are the general steps:</p>
-        <ol>
-            <li>
-                <p>In Census, go to <b>Syncs</b>.</p>
-            </li>
-            <li>
-                <p>Click <b>Add Sync</b>.</p>
-            </li>
-            <li>
-                <p>Under <b>What data do you want to sync?</b>, select your data source in the <b>Connection</b> field, and select your Model in the <b>Source</b> field.</p>
-            </li>
-            <li>
-                <p>Under <b>Where do you want to sync data to?</b>, select your destination app in the <b>Connection</b> field, and select your object (such as <b>User</b>) in the <b>Object</b> field.</p>
-            </li>
-            <li>
-                <p>Under <b>How do you want to update the destination?</b>, decide how you want to update and make a selection. Usually, you select <b>Update or Create</b> so that Census will update existing records and create new records for any that are missing.</p>
-            </li>
-            <li>
-                <p>Under <b>How are source and destination records matched?</b>, select a field from your source and a field from your destination app that will determine when records match.</p>
-            </li>
-            <li>
-                <p>Under <b>Which fields should be updated?</b>, map fields in your source to fields in your destination app.</p>
-            </li>
-            <li>
-                <p>Click <b>Next</b>.</p>
-            </li>
-            <li>
-                <p>Confirm the sync details, and click <b>Create Sync</b>.</p>
-            </li>
-        </ol>
-        <p>You can now run your Sync manually, or you can <a target="_blank" href="https://docs.getcensus.com/basics/core-concept#running-syncs">create a detailed schedule</a> to control when it runs.</p>
-        <p>After you run Syncs, you can view your <a target="_blank" href="https://docs.getcensus.com/basics/core-concept#understanding-sync-history">Sync History</a> for valuable insights about:</p>
-        <ul>
-            <li>
-                <p>Failed Syncs</p>
-            </li>
-            <li>
-                <p>Invalid records</p>
-            </li>
-            <li>
-                <p>Rejected records</p>
-            </li>
-        </ul>
-        <p>
-            <img src="Census001.png" class="thumbnail" />
-        </p>
-        <h2>Create a Census Segment</h2>
-        <p>Segments are another method (in addition to Models) that you can use to define a subset of the data from your data source. Some of your destination apps allow you to define segments inside them. But to realize the benefits of a segment that you can use to keep the segment data in sync across multiple destination apps, <a target="_blank" href="https://docs.getcensus.com/basics/segmentation">create a Census Segment</a>. Census Segments also have the convenience of being simple to create with Census's easy visual builder. No SQL needed!</p>
-        <p>
-            <img src="Census002.png" class="thumbnail" />
-        </p>
-        <h2>Take your data to the next level!</h2>
-        <p>You can always find the full instructions to accomplish any data magic you desire in the <a target="_blank" href="https://docs.getcensus.com/">Census Docs</a>.</p>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="RRApiReference3Col.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search our API reference" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <head>
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                                        <meta charset="utf-8" />
+                                        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                                        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+                                        <link href="Resources/Stylesheets/PetStoreMainstyles.css" rel="stylesheet" type="text/css" /><title>Census enables anyone to be a data engineer!</title>
+                                        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+                                        </script>
+                                        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+                                        </script>
+                                        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+                                        </script>
+                                        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+                                        </script>
+                                        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+                                        </script>
+                                        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+                                        </script>
+                                        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+                                        </script>
+                                    </head>
+                                    <div style="margin-left: 15%; margin-right: 15%; color: #090051;">
+                                        <h1 style="color: #4450e7; font-weight: 700;">Census enables anyone to be a data engineer!</h1>
+                                        <p>With Census, you don’t have to be a data engineer or a SQL programmer to configure your Data Warehouse to be a single source that feeds all of your company’s business apps.</p>
+                                        <p>Census enables you to easily create connections from your Data Warehouse (Data Sources such as <a target="_blank" href="https://docs.getcensus.com/sources/snowflake">Snowflake</a>, <a target="_blank" href="https://docs.getcensus.com/sources/sql-server">SQL Server</a>, and <a target="_blank" href="https://docs.getcensus.com/sources/overview">many more</a>) to your business applications (Destinations such as <a target="_blank" href="https://docs.getcensus.com/destinations/hubspot">Hubspot</a>, <a target="_blank" href="https://docs.getcensus.com/destinations/salesforce">Salesforce</a>, and <a target="_blank" href="https://docs.getcensus.com/">many more</a>). Then Census maintains the flow of your data (via Syncs) from Source to Destination.</p>
+                                        <p>If you don't find a Destination you need in the large list of preconfigured Destinations in Census, you can easily build a <a href="#Connect3">Census Custom API</a> to work with your Destination.</p>
+                                        <p>In this article, you’ll learn how easy it is to:</p>
+                                        <ul>
+                                            <li>
+                                                <p>Connect Census to your <a href="#Connect">data source</a>.</p>
+                                            </li>
+                                            <li>
+                                                <p>Connect Census to your <a href="#Connect2">destination app</a>.</p>
+                                            </li>
+                                            <li>
+                                                <p>Create a <a href="#Create">Model</a> (data subset).</p>
+                                            </li>
+                                            <li>
+                                                <p>Create a <a href="#Create2">Census Sync</a> between your source and destination.</p>
+                                            </li>
+                                            <li>
+                                                <p>Further refine your data with reusable <a href="#Create3">Census Segments</a>.</p>
+                                            </li>
+                                        </ul>
+                                        <h2 style="color: #4450e7; font-weight: 700;"><a name="Connect"></a>Connect Census to your data source</h2>
+                                        <p>The first step on your journey to analytical bliss is to create the connection from Census to your data source.</p>
+                                        <p>Check the specific instructions for your data source in the <a target="_blank" href="https://docs.getcensus.com/sources/overview">Census Docs</a>.</p>
+                                        <p>Generally, those instructions are as easy as this:</p>
+                                        <ol>
+                                            <li value="1">
+                                                <p>Open Census, go to <b>Connections</b>, click <b>Data Sources</b>, click <b>Add Data Source</b>, and select your data source.</p>
+                                            </li>
+                                            <li value="2">
+                                                <p>Fill out a few fields in Census. Check the page for your data source in the <a target="_blank" href="https://docs.getcensus.com/sources/overview">Census Docs</a>, because you will often find a preconfigured script or other information that makes filling out these fields even easier.</p>
+                                                <p>
+                                                    <img src="Census000.png" style="width: 80%;border-left-style: solid;border-left-width: 2px;border-left-color: #808080;border-right-style: solid;border-right-width: 2px;border-right-color: #808080;border-top-style: solid;border-top-width: 2px;border-top-color: #808080;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #808080;" />
+                                                </p>
+                                            </li>
+                                            <li value="3">
+                                                <p>Click the <b>Test</b> button to perform a test that verifies your connection.</p>
+                                            </li>
+                                        </ol>
+                                        <p>That's it! Census is now connected to your data source. You're ready to connect Census to your destination app.</p>
+                                        <h2 style="color: #4450e7; font-weight: 700;"><a name="Connect2"></a>Connect Census to your destination app</h2>
+                                        <p>Now you can harness the power of Census by connecting Census to your destination app, and then using Census to sync from your connected data source to your destination.</p>
+                                        <p>Check the specific instructions for your destination app in the <a target="_blank" href="https://docs.getcensus.com/sources/overview">Census Docs</a>. For the full list of destinations and instructions, see <a target="_blank" href="https://docs.getcensus.com/">this page</a>.</p>
+                                        <p>Generally, those instructions go something like this:</p>
+                                        <ol>
+                                            <li value="1">
+                                                <p>Gather some basic information from your destination app, which can include Administrator credentials, API Key, API Secret, and so on.</p>
+                                            </li>
+                                            <li value="2">
+                                                <p>In Census, go to the <b>Connections</b> page, click <b>Add Service</b>, and select your destination app.</p>
+                                            </li>
+                                            <li value="3">
+                                                <p>Complete the other fields of information that Census needs, which generally include the information you gathered in Step 1.</p>
+                                            </li>
+                                            <li value="4">
+                                                <p>Click <b>Connect</b>.</p>
+                                            </li>
+                                        </ol>
+                                        <p>You now have your data source and destination connected to Census. You're ready to specify the data you want to sync between the source and destination.</p>
+                                        <h2 style="color: #4450e7; font-weight: 700;"><a name="Connect3"></a>Connect Census to other destination apps with Census Custom API</h2>
+                                        <p>With Census, you aren’t limited to connecting to only destinations with our preconfigured destination app connections. You can create a Census Custom API to connect to any app that has a URL that Census can access over the internet!</p>
+                                        <p>At the highest level, you can think of your Census Custom API in two phases:</p>
+                                        <ul>
+                                            <li>
+                                                <p>In the Sync Planning phase, you use three API methods: list_objects, list_fields, and supported_operations. These three methods, respectively, get a list of objects to write to, a list of fields for those objects, and the types of operations (such as update) that can be performed on those objects. For full details about these methods, see <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#list_objects">list_objects</a>, <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#list_fields">list_fields</a>, and <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#supported_operations">supported_operations</a>.</p>
+                                            </li>
+                                            <li>
+                                                <p>In the Sync Execution phase, you use these two methods: get_sync_speed, which controls the speed at which Census sends data to your API; and sync_batch, which syncs a batch of records to your destination and reports success or failure. For full details about these methods, see <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#get_sync_speed">get_sync_speed</a> and <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#sync_batch">sync_batch</a>.</p>
+                                            </li>
+                                        </ul>
+                                        <div class="Note" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Your Custom API must have one other method, named test_connection, which works with Census’s Test Connection button to provide an easy way to verify that your connection is working.</div>
+                                        <p>For your Census Custom API, you can currently perform three operations on your data:</p>
+                                        <ul>
+                                            <li>
+                                                <p><b>insert</b>: This only creates records in your destination. It can’t modify records.</p>
+                                            </li>
+                                            <li>
+                                                <p><b>update</b>: This only modifies records in your destination. It can’t create records.</p>
+                                            </li>
+                                            <li>
+                                                <p><b>upsert</b>: This is the most commonly used operation. It can create and modify records in your destination.</p>
+                                            </li>
+                                        </ul>
+                                        <p>Census helps you ensure that your Custom API is secure. Check out <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#security-considerations">Security Considerations</a> to learn more.</p>
+                                        <p>To get a feel for what you can do with a Census Custom API, configure a quick <a target="_blank" href="https://docs.getcensus.com/destinations/custom-api#demo-destination">Demo API</a>.</p>
+                                        <h2 style="color: #4450e7; font-weight: 700;"><a name="Create"></a>Create a Census Model for your data source</h2>
+                                        <p>Models in Census are queries that define a subset of data from your data source that you want Census to sync into your destination app. If you already have some data modeling in your data source, your Census Model can be simple. Or if you have a data modeling integration with dbt or Looker, you can connect that with your Census Model. If you need to model from scratch, that is also no problem. You can create a simple or complex Census Model to fit your needs.</p>
+                                        <p>Here are the general steps:</p>
+                                        <ol>
+                                            <li value="1">
+                                                <p>In Census, go to <b>Models</b>, and click <b>Add Model</b>.</p>
+                                            </li>
+                                            <li value="2">
+                                                <p>In the <b>Query</b> field, enter the SQL that defines your needed subset of data.</p>
+                                            </li>
+                                            <li value="3">
+                                                <p>Click <b>Preview</b> to verify that your query retrieves the data you want.</p>
+                                            </li>
+                                            <li value="4">
+                                                <p>Click <b>Save Model</b>.</p>
+                                            </li>
+                                        </ol>
+                                        <h2 style="color: #4450e7; font-weight: 700;"><a name="Create2"></a>Create a Census Sync</h2>
+                                        <p>In Census, your Sync will define how you want Census to sync your data (based on a Census Model or as a whole) between your data source and your destination app.</p>
+                                        <p>With Syncs, you harness the great power of Census. Census Syncs don’t rely on events to initiate a sync. They sync whenever data in your model changes, so that your data source and your destination are always in sync!</p>
+                                        <p>Here are the general steps:</p>
+                                        <ol>
+                                            <li value="1">
+                                                <p>In Census, go to <b>Syncs</b>.</p>
+                                            </li>
+                                            <li value="2">
+                                                <p>Click <b>Add Sync</b>.</p>
+                                            </li>
+                                            <li value="3">
+                                                <p>Under <b>What data do you want to sync?</b>, select your data source in the <b>Connection</b> field, and select your Model in the <b>Source</b> field.</p>
+                                            </li>
+                                            <li value="4">
+                                                <p>Under <b>Where do you want to sync data to?</b>, select your destination app in the <b>Connection</b> field, and select your object (such as <b>User</b>) in the <b>Object</b> field.</p>
+                                            </li>
+                                            <li value="5">
+                                                <p>Under <b>How do you want to update the destination?</b>, decide how you want to update and make a selection. Usually, you select <b>Update or Create</b> so that Census will update existing records and create new records for any that are missing.</p>
+                                            </li>
+                                            <li value="6">
+                                                <p>Under <b>How are source and destination records matched?</b>, select a field from your source and a field from your destination app that will determine when records match.</p>
+                                            </li>
+                                            <li value="7">
+                                                <p>Under <b>Which fields should be updated?</b>, map fields in your source to fields in your destination app.</p>
+                                            </li>
+                                            <li value="8">
+                                                <p>Click <b>Next</b>.</p>
+                                            </li>
+                                            <li value="9">
+                                                <p>Confirm the sync details, and click <b>Create Sync</b>.</p>
+                                            </li>
+                                        </ol>
+                                        <p>You can now run your Sync manually, or you can <a target="_blank" href="https://docs.getcensus.com/basics/core-concept#running-syncs">create a detailed schedule</a> to control when it runs.</p>
+                                        <p>After you run Syncs, you can view your <a target="_blank" href="https://docs.getcensus.com/basics/core-concept#understanding-sync-history">Sync History</a> for valuable insights about:</p>
+                                        <ul>
+                                            <li>
+                                                <p>Failed Syncs</p>
+                                            </li>
+                                            <li>
+                                                <p>Invalid records</p>
+                                            </li>
+                                            <li>
+                                                <p>Rejected records</p>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            <img src="Census001.png" style="width: 80%;border-left-style: solid;border-left-width: 2px;border-left-color: #808080;border-right-style: solid;border-right-width: 2px;border-right-color: #808080;border-top-style: solid;border-top-width: 2px;border-top-color: #808080;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #808080;" />
+                                        </p>
+                                        <h2 style="color: #4450e7; font-weight: 700;"><a name="Create3"></a>Create a Census Segment</h2>
+                                        <p>Segments are another method (in addition to Models) that you can use to define a subset of the data from your data source. Some of your destination apps allow you to define segments inside them. But to realize the benefits of a segment that you can use to keep the segment data in sync across multiple destination apps, <a target="_blank" href="https://docs.getcensus.com/basics/segmentation">create a Census Segment</a>. Census Segments also have the convenience of being simple to create with Census's easy visual builder. No SQL needed!</p>
+                                        <p>
+                                            <img src="Census002.png" style="width: 80%;border-left-style: solid;border-left-width: 2px;border-left-color: #808080;border-right-style: solid;border-right-width: 2px;border-right-color: #808080;border-top-style: solid;border-top-width: 2px;border-top-color: #808080;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #808080;" />
+                                        </p>
+                                        <h2 style="color: #4450e7; font-weight: 700;">Take your data to the next level!</h2>
+                                        <p>You can always find the full instructions to accomplish any data magic you desire in the <a target="_blank" href="https://docs.getcensus.com/">Census Docs</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

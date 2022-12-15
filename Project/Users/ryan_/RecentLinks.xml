@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RecentLinks>
-    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage" />
-    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog" />
+    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
+        <Link Value="F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\Content\Census000.png" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="F:\Software\PersonalFlareProjects\RROtherFlareProjects\MyGitHubRepostories\lookatthem-tech.github.io\ApiDocsInFlare\Content\Census.htm" />
+    </Dialog>
 </RecentLinks>
